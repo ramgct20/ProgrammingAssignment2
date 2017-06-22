@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+
 
 ## Write a short comment describing this function
+#  set() the value of the matrix
+#  get() the value of the matrix
+#  setinv() the value of the inverse
+#  getinv() the value of the inverse
 
 makeCacheMatrix <- function(x = matrix()) 
   {
@@ -17,7 +20,11 @@ makeCacheMatrix <- function(x = matrix())
   list(set = set, get = get, setinv = setinv, getinv = getinv)
   }	
 
-## Write a short comment describing this function
+# Below function calculates the inverse of the special "matrix" created
+# with the above function. It initialy checks to see if the inverse
+# has already been caclulated and available. If available , the function get's the inverse from the cache
+# and skips the computation. else, it calculates the matrix inverse
+
 
 cacheSolve <- function(x, ...) 
   {
